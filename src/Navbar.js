@@ -14,12 +14,38 @@ const Navbar = () => {
           </button>
         </div>
         <div className="links-container show-container">
-          <ul className="social-icons">
+          <ul className="links">
             <li>
-              <a href="#"></a>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
             </li>
           </ul>
         </div>
+        <ul className="social-icons">
+          <li>
+            <a href="https://twitter.com">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <FaTwitter />
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );
