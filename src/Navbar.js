@@ -26,21 +26,14 @@ const Navbar = () => {
           </ul>
         </div>
         <ul className="social-icons">
-          <li>
-            <a href="https://twitter.com">
-              <FaTwitter />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <FaTwitter />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <FaTwitter />
-            </a>
-          </li>
+          {social.map((item) => {
+            const { id, url, icon } = item;
+            return (
+              <li key={id}>
+                <a href={url}>{icon}</a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>
